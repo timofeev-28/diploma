@@ -1,0 +1,20 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-text: #333;
+  --color-nav-hover: #C283f3;
+  --color-active: #7943a4;
+  --color-btn: #9d5cd0;
+  --color-btn-border: #d1a9f0;
+  --color-btn-active: #7943a4;
+  --color-input-searh: rgba(255, 255, 255, 0.85);
+  --color-selectBorder: #999;
+  --color-btn-slider: rgb(102, 102, 102);
+  --color-btn-slider-disabled: rgba(102, 102, 102, 0.5);
+  --color-border:  #cacaca;
+  --color-btn-events: #ececec;
+  --color-input-hover: #eaeaea;
+  --color-validate: #d11616;
+  --color-bullet: rgb(102, 102, 102);
+  --gap-title: 16px;
+}

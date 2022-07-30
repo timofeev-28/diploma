@@ -1,0 +1,11 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.about__descr {
+  max-width: 1080px;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-text);
+}

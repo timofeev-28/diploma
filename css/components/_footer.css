@@ -1,0 +1,37 @@
+.footer {
+  padding-top: 45px;
+  padding-bottom: 48px;
+  background: var(--color-black);
+}
+
+.footer__container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right : 20px;
+}
+
+.social__item path {
+  transition: fill .3s;
+}
+
+.social__item:focus-visible:not(:hover):not(:active) path {
+  fill: var(--color-white);
+}
+
+@media (any-hover: hover) {
+  .social__item:hover path {
+    fill: var(--color-white);
+  }
+}
+
+.social__item:active path{
+  fill: var(--color-btn);
+}
+
+.social__link svg {
+  width: 45px;
+  height: 45px;
+}

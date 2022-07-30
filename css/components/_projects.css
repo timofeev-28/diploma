@@ -1,0 +1,307 @@
+.projects {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.projects__descr {
+  margin-bottom: 21px;
+  max-width: 1080px;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-text);
+}
+
+.projects__title-slider {
+  margin-bottom: 23px;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-text);
+}
+
+.projects__link {
+  position: relative;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-btn);
+  transition: color .3s;   
+}
+
+.projects__link span {
+  position: relative;
+  z-index: 1;
+}
+
+.projects__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -5px;
+  bottom: 0;
+  left: -4px;
+  background-color: var(--color-btn);
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.projects__link::after {  /*border снизу*/
+  content: "";
+  position: absolute;
+  right: 4px;
+  bottom: 0;
+  left: 4px;
+  height: 1px;
+  background-color: var(--color-btn);
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.projects__link:focus-visible::before {
+  opacity: 1;
+}
+
+.projects__link:focus-visible {
+  color: var(--color-white);
+}
+
+@media (any-hover: hover) {
+  .projects__link:hover:not(:focus-visible)::after {
+    opacity: 1;
+  }
+}
+
+.projects__link:active:not(:focus-visible)::after {
+  background-color: var(--color-active);
+  opacity: 1;
+}
+
+.projects__link:active:not(:focus-visible) {
+  color: var(--color-active);
+}
+
+/* slider */
+.projects__wrapper {
+  position: relative;
+  margin-left: calc(75 / 1600 * 100%);
+  margin-right: calc(75 / 1600 * 100%);
+  width: calc(1450 / 1600 * 100%);
+}
+
+.projects__swiper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.projects__navigation {
+  position: relative;
+}
+
+.projects__btn {
+  position: absolute;
+  top: calc(50% - 30px / 2);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-btn-events);
+  transition: background-color .3s, box-shadow .3s;
+}
+
+.projects__prev {
+  left: 0px;
+}
+
+.projects__next {
+  right: 0;
+}
+
+.projects__btn::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px / 2);
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.projects__prev::before {
+  left: calc(50% - 7px / 2);
+  border-bottom: 1px solid var(--color-black);
+  border-left: 1px solid var(--color-black);
+}
+
+.projects__next::before {
+  left: calc(50% - 7px / 2);
+  border-top: 1px solid var(--color-black);
+  border-right: 1px solid var(--color-black);
+}
+
+.projects__btn:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--color-btn);
+}
+
+@media (any-hover: hover) {
+  .projects__btn:hover:not(:focus-visible) {
+    background-color: var(--color-btn-border);
+  }
+}
+
+.projects__btn:active:not(:focus-visible) {
+  box-shadow: inset 0 0 0 2px var(--color-btn);
+  background-color: var(--color-btn-border);
+}
+
+.projects__btn.swiper-button-disabled {
+  cursor: auto;
+  background-color: var(--color-btn-slider-disabled);
+}
+
+@media (any-hover: hover) {
+  .projects__btn.swiper-button-disabled:hover:not(:focus-visible) {
+    background-color: var(--color-btn-slider-disabled);
+  }
+}
+
+.projects__btn.swiper-button-disabled:active:not(:focus-visible) {
+  box-shadow: none;
+  background-color: var(--color-btn-slider-disabled);
+}
+
+.projects__slide {
+  display: block;
+  height: 150px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px var(--color-border);
+  text-align: center;
+  transition: box-shadow .3s;
+}
+
+.projects__image {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  filter: grayscale(1);
+  opacity: .4; 
+  transition: filter .3s, opacity .3s;
+}
+
+.projects__slide:focus-visible {
+  box-shadow: inset 0 0 0 1px var(--color-btn);
+}
+
+@media (any-hover: hover) {
+  .projects__slide:hover:not(:focus-visible) .projects__image {
+    filter: grayscale(0);
+    opacity: 1; 
+  }
+}
+
+.projects__slide:active:not(:focus-visible) .projects__image {
+  filter: grayscale(0);
+  opacity: 1; 
+}
+
+.projects__slide:active:not(:focus-visible) {
+  box-shadow: inset 0 0 0 1px var(--color-btn);
+}
+
+/* тултипы */
+.tooltip {
+  position: relative;
+}
+
+.projects__tooltip {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip__btn {
+  position: absolute;
+  top: 3px;
+  left: -1px;
+}
+
+.tooltip__text {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  z-index: 1;
+  padding: 11px;
+  width: max-content;
+  max-width: 264px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-btn);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: opacity .3s, visibility .3s; 
+}
+
+.tooltip__text::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 1px);
+  top: calc(100% - 4px);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  border-style: solid;
+  border-width: 12px 9.5px 0 9.5px;
+  border-color: var(--color-btn) transparent transparent transparent;
+  transform: translateX(-50%);
+  transition: opacity .3s, visibility .3s;
+}
+
+.tooltip__visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.tooltip__btn:focus-visible + .tooltip__text,
+.tooltip__btn:focus-visible  + .tooltip__text::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (any-hover: hover) {
+  .tooltip__btn:hover:not(:focus-visible) + .tooltip__text,
+  .tooltip__btn:hover:not(:focus-visible) + .tooltip__text::before {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* ховер-эффект в тултипах */
+.tooltip__svg {
+  transition: fill .3s;
+}
+
+.tooltip__btn:focus-visible .tooltip__svg {
+  fill: #D1A9F0;
+}
+
+@media (any-hover: hover) {
+  .tooltip__btn:hover:not(:focus-visible) .tooltip__svg {
+    fill: #D1A9F0;
+  }
+}
+
+
+
+
+
+
+
