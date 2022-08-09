@@ -7,10 +7,11 @@
   padding-top: 233px;
   padding-bottom: 121px;
   z-index: 2;
-  pointer-events: none;   /* чтобы на мышь реагировала свайпер, он стоит за контейнером*/
+  /* pointer-events: none; */
 }
 
 .hero__title {
+  margin: 0;
   margin-top: -2px;
   margin-bottom: 0;
   max-width: 597px;
@@ -21,6 +22,7 @@
 }
 
 .hero__descr {
+  margin: 0;
   margin-bottom: 92px;
   max-width: 550px;
   font-weight: 700;
@@ -115,16 +117,15 @@
 }
 
 /* пагинация под наш дизайн */
-.hero .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+/* .hero .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;
 }
 
 .hero .swiper-pagination-bullet {
-  /* position: relative; */
+  position: relative;
   width: 15px;
   height: 15px;
-  background: rgba(255, 255, 255, .2);  /*цвет через rgba, чтобы opacity 1 работал для hover*/
-  opacity: 1;
+  background: rgba(255, 255, 255, .2);
 }
 
 .hero .swiper-pagination-bullet:hover:not(:focus-visible) {
@@ -146,4 +147,4 @@
 
 .hero .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 30px;
-}
+} */

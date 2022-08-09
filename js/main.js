@@ -67,7 +67,7 @@ btns.forEach(item => {
     });
     btns.forEach(el => {
       if (el != this) {
-        el.classList.remove(activeClassbtns)
+        el.classList.remove(activeClassbtns);
       }
     });
     DropThis.classList.toggle(activeClassdropdowns);
@@ -80,17 +80,10 @@ btns.forEach(item => {
 const container = document.querySelector(".container")
 const swiper = new Swiper('.swiper', {
   loop: true,
-  // slidesPerView: 1,
-  // spaceBetween: 10,
   speed: 3000,
   effect: "fade",
   autoplay: {
     delay: 2000,
-  },
-  pagination: {
-    el: ".hero .swiper-pagination",
-    type: 'bullets',
-    clickable: true,
   },
 });
 
@@ -132,13 +125,13 @@ document.addEventListener("DOMContentLoaded", () => {
       1024: {
         slidesPerView: 2,
         spaceBetween: 34,
-        slidesPerGroup: 2
+        slidesPerGroup: 1
       },
 
       1230: {
         slidesPerView: 3,
         spaceBetween: 50,
-        slidesPerGroup: 3
+        slidesPerGroup: 1
       }
     },
 
@@ -319,7 +312,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     breakpoints: {
-      500: {
+      580: {
         slidesPerView: 2,
         spaceBetween: 34,
         slidesPerGroup: 2,
@@ -343,7 +336,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ACCORDION для версии плагина  3.1.1. (https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js)
 (() => {
-  new Accordion(".js-accordion-container", {
+  new Accordion(".accordion", {
     openOnInit: [0]
   });
 })();
@@ -368,18 +361,8 @@ howBtn.forEach(function(element){
 // МОДАЛЬНОЕ ОКНО
 const modal = new GraphModal();
 
-
-// Для ПЛАВНОГО СКРОЛЛА
-// document.querySelectorAll('.js-scroll-link').forEach(link => {
-//   link.addEventListener('click', function(e) {
-//       e.preventDefault();
-
-//       const href = this.getAttribute('href').substring(1);
-//       const scrollTarget = document.getElementById(href);
-//       const elementPosition = scrollTarget.getBoundingClientRect().top;
-
-//       window.scrollBy({
-//           top: elementPosition,
-//           behavior: 'smooth'
-//       });
-// })});
+// Smooth scroll
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1400,
+	speedAsDuration: true
+});

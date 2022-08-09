@@ -1,23 +1,7 @@
 @media (max-width: 1380px) {
   /* HEADER */
-  .nav {
-    width: 77%;
-  }
-
-  .nav__list {
-    width: 81%;
-  }
-
-  .nav__item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  .form-search {
-    width: 228px;
-  }
-
-  .menu__list {
-    width: 75%;
+  .menu__item:not(:last-child) {
+    margin-right: 40px;
   }
 
   /* CATALOG */
@@ -67,7 +51,22 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {     /* 1180 */
+  .nav__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .form-search {
+    width: 210px;
+  }
+}
+
+
+@media (max-width: 1024px) {     /* 1024 */
   .container {
     padding-right: 50px;
     padding-left: 50px;
@@ -75,7 +74,7 @@
   }
 
   /* HEADER */
-  .header-bottom {
+  .header-top__menu {
     display: none;
   }
 
@@ -253,15 +252,15 @@
   }
 
   .swiper-slide--img1 {
-    background-image: url("../../img/hero-1-1024.jpg");
+    background-image: url("../img/hero-1-1024.jpg");
   }
 
   .swiper-slide--img2 {
-    background-image: url("../../img/hero-2-1024.jpg");
+    background-image: url("../img/hero-2-1024.jpg");
   }
 
   .swiper-slide--img3 {
-    background-image: url("../../img/hero-3-1024.jpg");
+    background-image: url("../img/hero-3-1024.jpg");
   }
 
   /* GALLERY */
@@ -385,7 +384,7 @@
 }
 
 
-@media (max-width: 970px) {
+@media (max-width: 970px) {     /* 970 */
   /* CATALOG */
   .accordion__inner-list {
     width: 100%;
@@ -443,7 +442,6 @@
     max-width: 100%;
   }
 
-
   /* CONTACTS */
   .contacts__name, .contacts__tel {
     margin-right: 20px;
@@ -461,8 +459,7 @@
   }
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 768px) {     /* 768 */
   /* HEADER */
   .form-search {
     bottom: -10px;
@@ -486,15 +483,15 @@
 
   /* HERO */
   .swiper-slide--img1 {
-    background-image: url("../../img/hero-1-768.jpg");
+    background-image: url("../img/hero-1-768.jpg");
   }
 
   .swiper-slide--img2 {
-    background-image: url("../../img/hero-2-768.jpg");
+    background-image: url("../img/hero-2-768.jpg");
   }
 
   .swiper-slide--img3 {
-    background-image: url("../../img/hero-3-768.jpg");
+    background-image: url("../img/hero-3-768.jpg");
   }
 
   /* GALLERY */
@@ -636,6 +633,10 @@
     height: 106px;
   }
 
+  .projects__image {
+    width: 90%;
+  }
+
   /* CONTACTS */
   .contacts__address {
     margin-bottom: 8px;
@@ -660,11 +661,24 @@
   }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 670px) {     /* 670 */
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1630px;
+  }
+
   /* HEADER */
   .header-top {
     padding-top: 18px;
     padding-bottom: 16px;
+  }
+
+  .form-search {
+    right: 15px;
+    left: 15px;
+    width: auto;
   }
 
     /* HERO */
@@ -709,7 +723,7 @@
     padding-top: 50px;
     padding-bottom: 60px;
     background-color: var(--color-text);
-    background-image: url(../../img/gallery-bcg.jpg);
+    background-image: url("../img/gallery-bcg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -771,6 +785,10 @@
     margin-bottom: 25px;
   }
 
+  .events__btn {
+    display: none;
+  }
+
   /* PROJECTS */
   .projects {
     padding-bottom: 50px;
@@ -793,12 +811,7 @@
   }
 }
 
-@media (max-width: 510px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    max-width: 1630px;
-  }
+@media (max-width: 510px) {     /* 510 */
 
   /* HEADER */
   .header-top {
@@ -960,15 +973,15 @@
   }
 
   .swiper-slide--img1 {
-    background-image: url("../../img/hero-1-320.jpg");
+    background-image: url("../img/hero-1-320.jpg");
   }
 
   .swiper-slide--img2 {
-    background-image: url("../../img/hero-2-320.jpg");
+    background-image: url("../img/hero-2-320.jpg");
   }
 
   .swiper-slide--img3 {
-    background-image: url("../../img/hero-3-320.jpg");
+    background-image: url("../img/hero-3-320.jpg");
   }
 
   /* ABOUT */
@@ -1127,6 +1140,11 @@
   .events__btn {
     display: none;
   }
+
+  .projects__image {
+    height: 90%;
+  }
+
   .events {
     padding-top: 30px;
   }

@@ -25,12 +25,17 @@
 .events__content {
   flex-direction: column;
   justify-content: space-between;
+  align-items: left;
   box-sizing: border-box;
   padding: 14px 50px 47px;
   min-height: 400px;
   height: 100%;
   border: 1px solid var(--color-border);
   border-top: none;
+}
+
+.events__content-top {
+  margin-bottom: 5px;
 }
 
 .events__place,
@@ -47,6 +52,7 @@
 }
 
 .events__caption {
+  margin: 0;
   margin-bottom: 9px;
   font-weight: 600;
   font-size: 24px;
@@ -55,6 +61,7 @@
 }
 
 .events__descr {
+  margin: 0;
   font-size: 16px;
   line-height: 32px;
   color: var(--color-text);
@@ -73,6 +80,7 @@
 
 .events__link span {
   position: relative;
+  padding-bottom: 3px;
   border-bottom: 1px solid var(--color-btn);
   z-index: 1;
   transition: border-bottom .3s;

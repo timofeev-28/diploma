@@ -29,7 +29,7 @@
               <span class="nav__btn-span nav__btn-span--top"></span>
               <span class="nav__btn-span nav__btn-span--bottom"></span>
             </button>
-            <ul class="nav__list flex">
+            <ul class="nav__list flex list-reset">
               <li class="nav__item"><a class="nav__link" href="#about"><span>О нас</span></a></li>
               <li class="nav__item"><a class="nav__link" href="#gallery"><span>Галерея</span></a></li>
               <li class="nav__item"><a class="nav__link" href="#catalog"><span>Каталог</span></a></li>
@@ -71,19 +71,19 @@
             </svg>
           </button>
         </div>
-        <div class="menu header-bottom header-bottom__menu">
+        <div class="menu header-top__menu">
           <div class="container menu__container flex">
-            <ul class="menu__list flex">
+            <ul class="menu__list flex list-reset">
               <li class="menu__item">
                 <button class="menu__btn btn-reset">
                   <span>Реализм</span>
-                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="menu__btn-svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 1L6 6L1 1" stroke="white" />
                   </svg>
                 </button>
                 <div class="menu__dropdown dropdown">
                   <div class="dropdown__simplebar">
-                    <ul class="dropdown__list">
+                    <ul class="dropdown__list list-reset">
                       <li class="dropdown__item dropdown__item--1"><a class="dropdown__link"
                           href="#"><span>Тинторетто</span></a></li>
                       <li class="dropdown__item dropdown__item--2"><a class="dropdown__link"
@@ -101,13 +101,13 @@
               <li class="menu__item">
                 <button class="menu__btn btn-reset">
                   <span>Импрессионизм</span>
-                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="menu__btn-svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 1L6 6L1 1" stroke="white" />
                   </svg>
                 </button>
                 <div class="menu__dropdown dropdown">
                   <div class="dropdown__simplebar">
-                    <ul class="dropdown__list">
+                    <ul class="dropdown__list list-reset">
                       <li class="dropdown__item dropdown__item--5"><a class="dropdown__link"
                           href="#"><span>Моне</span></a></li>
                       <li class="dropdown__item dropdown__item--6"><a class="dropdown__link"
@@ -123,13 +123,13 @@
               <li class="menu__item">
                 <button class="menu__btn btn-reset">
                   <span>Постимпрессионизм</span>
-                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="menu__btn-svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 1L6 6L1 1" stroke="white" />
                   </svg>
                 </button>
                 <div class="menu__dropdown dropdown">
                   <div class="dropdown__simplebar">
-                    <ul class="dropdown__list">
+                    <ul class="dropdown__list list-reset">
                       <li class="dropdown__item dropdown__item--9"><a class="dropdown__link" href="#"><span>Ван
                             Гог</span></a></li>
                       <li class="dropdown__item dropdown__item--10"><a class="dropdown__link"
@@ -147,13 +147,13 @@
               <li class="menu__item">
                 <button class="menu__btn btn-reset">
                   <span>Авангард</span>
-                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="menu__btn-svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 1L6 6L1 1" stroke="white" />
                   </svg>
                 </button>
                 <div class="menu__dropdown dropdown">
                   <div class="dropdown__simplebar">
-                    <ul class="dropdown__list">
+                    <ul class="dropdown__list list-reset">
                       <li class="dropdown__item dropdown__item--13"><a class="dropdown__link"
                           href="#"><span>Кандинский</span></a></li>
                       <li class="dropdown__item dropdown__item--14"><a class="dropdown__link"
@@ -177,13 +177,13 @@
               <li class="menu__item">
                 <button class="menu__btn btn-reset">
                   <span>Футуризм</span>
-                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="menu__btn-svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 1L6 6L1 1" stroke="white" />
                   </svg>
                 </button>
                 <div class="menu__dropdown dropdown">
                   <div class="dropdown__simplebar">
-                    <ul class="dropdown__list">
+                    <ul class="dropdown__list list-reset">
                       <li class="dropdown__item dropdown__item--17"><a class="dropdown__link"
                           href="#"><span>Карра</span></a></li>
                       <li class="dropdown__item dropdown__item--18"><a class="dropdown__link"
@@ -211,7 +211,6 @@
             <div class="swiper-slide swiper-slide--img2"></div>
             <div class="swiper-slide swiper-slide--img3"></div>
           </div>
-          <!-- <div class="swiper-pagination"></div> -->
         </div>
         <div class="container">
           <div class="hero__content">
@@ -277,7 +276,7 @@
                 <div class="slider__pagination"></div>
                 <button class="slider__btn btn-reset slider__next" aria-label="К следующему слайду"></button>
               </div>
-              <div class="swiper-container slides__container">
+              <div class="swiper-container slider__container">
                 <div class="swiper-wrapper">
                   <button class="swiper-slide slider__slide btn-reset" type="button" data-graph-path="first">
                     <picture>
@@ -342,8 +341,8 @@
                   <img class="graph-modal__content-image" src="img/gallery-modal-1920-1.jpg" alt="Картина">
                 </picture>
                 <div class="graph-modal__content-descr">
-                  <h2 class="graph-modal__content-title">Казимир Малевич</h2>
-                  <h3 class="graph-modal__content-caption">«Женщина с граблями»</h3>
+                  <h2 class="graph-modal__content-title title-reset">Казимир Малевич</h2>
+                  <h3 class="graph-modal__content-caption title-reset">«Женщина с граблями»</h3>
                   <span class="graph-modal__content-date">1931–1932</span>
                   <p class="graph-modal__content-text">Картина из второй серии крестьянского цикла работ Казимира
                     Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян
@@ -361,8 +360,8 @@
                   <img class="graph-modal__content-image" src="img/gallery-modal-1920-2.jpg" alt="Картина">
                 </picture>
                 <div class="graph-modal__content-descr">
-                  <h2 class="graph-modal__content-title">Казимир Малевич</h2>
-                  <h3 class="graph-modal__content-caption">«Женщина с граблями»</h3>
+                  <h2 class="graph-modal__content-title title-reset">Казимир Малевич</h2>
+                  <h3 class="graph-modal__content-caption title-reset">«Женщина с граблями»</h3>
                   <span class="graph-modal__content-date">1931–1932</span>
                   <p class="graph-modal__content-text">Картина из второй серии крестьянского цикла работ Казимира
                     Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян
@@ -380,8 +379,8 @@
                   <img class="graph-modal__content-image" src="img/gallery-modal-1920-3.jpg" alt="Картина">
                 </picture>
                 <div class="graph-modal__content-descr">
-                  <h2 class="graph-modal__content-title">Казимир Малевич</h2>
-                  <h3 class="graph-modal__content-caption">«Женщина с граблями»</h3>
+                  <h2 class="graph-modal__content-title title-reset">Казимир Малевич</h2>
+                  <h3 class="graph-modal__content-caption title-reset">«Женщина с граблями»</h3>
                   <span class="graph-modal__content-date">1931–1932</span>
                   <p class="graph-modal__content-text">Картина из второй серии крестьянского цикла работ Казимира
                     Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян
@@ -399,8 +398,8 @@
                   <img class="graph-modal__content-image" src="img/gallery-modal-1920-4.jpg" alt="Картина">
                 </picture>
                 <div class="graph-modal__content-descr">
-                  <h2 class="graph-modal__content-title">Казимир Малевич</h2>
-                  <h3 class="graph-modal__content-caption">«Женщина с граблями»</h3>
+                  <h2 class="graph-modal__content-title title-reset">Казимир Малевич</h2>
+                  <h3 class="graph-modal__content-caption title-reset">«Женщина с граблями»</h3>
                   <span class="graph-modal__content-date">1931–1932</span>
                   <p class="graph-modal__content-text">Картина из второй серии крестьянского цикла работ Казимира
                     Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян
@@ -418,8 +417,8 @@
                   <img class="graph-modal__content-image" src="img/gallery-modal-1920-5.jpg" alt="Картина">
                 </picture>
                 <div class="graph-modal__content-descr">
-                  <h2 class="graph-modal__content-title">Казимир Малевич</h2>
-                  <h3 class="graph-modal__content-caption">«Женщина с граблями»</h3>
+                  <h2 class="graph-modal__content-title title-reset">Казимир Малевич</h2>
+                  <h3 class="graph-modal__content-caption title-reset">«Женщина с граблями»</h3>
                   <span class="graph-modal__content-date">1931–1932</span>
                   <p class="graph-modal__content-text">Картина из второй серии крестьянского цикла работ Казимира
                     Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян
@@ -437,8 +436,8 @@
                   <img class="graph-modal__content-image" src="img/gallery-modal-1920-6.jpg" alt="Картина">
                 </picture>
                 <div class="graph-modal__content-descr">
-                  <h2 class="graph-modal__content-title">Казимир Малевич</h2>
-                  <h3 class="graph-modal__content-caption">«Женщина с граблями»</h3>
+                  <h2 class="graph-modal__content-title title-reset">Казимир Малевич</h2>
+                  <h3 class="graph-modal__content-caption title-reset">«Женщина с граблями»</h3>
                   <span class="graph-modal__content-date">1931–1932</span>
                   <p class="graph-modal__content-text">Картина из второй серии крестьянского цикла работ Казимира
                     Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян
@@ -480,14 +479,14 @@
               </div>
               <div class="tabs__item" data-target="empty">
                 <img class="tabs__image" src="img/catalog-2.jpg" alt="Рисунок с юным художником">
-                <h3 class="tabs__title">Что мы о нём знаем?</h3>
+                <h3 class="tabs__title title-reset">Что мы о нём знаем?</h3>
                 <p class="tabs__descr">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
-                <a href="#" class="tabs__link accordion__content-link">В галерею</a>
+                <a href="#gallery" class="tabs__link">В галерею</a>
               </div>
             </div>
-            <ul class="catalog__right js-accordion-container">
+            <ul class="catalog__right accordion list-reset">
               <li class="accordion__question ac js-enabled">
                 <button class="accordion__btn ac-trigger btn-reset" type="button">
                   <span class="accordion__text">
@@ -503,127 +502,126 @@
                 </button>
                 <div class="accordion__content ac-panel">
                   <div class="accordion__content-wrap">
-                    <ul class="accordion__inner-list">
+                    <ul class="accordion__inner-list list-reset">
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Бенедетто ди Биндо</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Бенедетто ди Биндо</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Бергоньоне, Амброджо</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Бергоньоне, Амброджо</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Биссоло, Франческо</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Биссоло, Франческо</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Больтраффио, Джованни</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Больтраффио, Джованни</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Бонсиньори, Франческо</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Бонсиньори, Франческо</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Боттичини, Рафаэлло</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Боттичини, Рафаэлло</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Брамантино</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Брамантино</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Бреа, Людовико</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Бреа, Людовико</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Бьяджо д’Антонио Туччи</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Бьяджо д’Антонио Туччи</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Веккьетта</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Веккьетта</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Андреа Верроккьо</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Андреа Верроккьо</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link accordion__link--active tab-active" data-path="domenico"
-                          href="javascript:void(0);">
-                          <span class="link__text">Доменико Гирландайо</span>
-                        </a>
+                        <button class="accordion__link accordion__link--active tab-active btn-reset" data-path="domenico">
+                          <span class="accordion__link-text">Доменико Гирландайо</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Беноццо Гоццоли</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Беноццо Гоццоли</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Граначчи, Франческо</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Граначчи, Франческо</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Грегорио ди Чекко</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Грегорио ди Чекко</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Джованни да Удине</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Джованни да Удине</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Джованни ди Паоло</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Джованни ди Паоло</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Джорджоне</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Джорджоне</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Парентино, Бернардо</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Парентино, Бернардо</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Пезеллино</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Пезеллино</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Пьетро Перуджино</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Пьетро Перуджино</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Перуцци, Бальдассаре</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Перуцци, Бальдассаре</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Пизанелло</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Пизанелло</span>
+                        </button>
                       </li>
                       <li class="accordion__item">
-                        <a class="accordion__link" data-path="empty" href="javascript:void(0);">
-                          <span class="link__text">Пинтуриккьо</span>
-                        </a>
+                        <button class="accordion__link btn-reset" data-path="empty">
+                          <span class="accordion__link-text">Пинтуриккьо</span>
+                        </button>
                       </li>
                     </ul>
                   </div>
@@ -648,7 +646,7 @@
                       <img class="accordion__content-background" src="img/accordion-bck.jpg" alt="Серый прямоугольник">
                     </div>
                     <div class="accordion__content-right flex">
-                      <h3 class="accordion__content-title">Здесь пока пусто</h3>
+                      <h3 class="accordion__content-title title-reset">Здесь пока пусто</h3>
                       <p class="accordion__content-text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
                         интересное для себя</p>
                       <a href="#" class="accordion__content-link">В галерею</a>
@@ -675,10 +673,10 @@
                       <img class="accordion__content-background" src="img/accordion-bck.jpg" alt="Серый прямоугольник">
                     </div>
                     <div class="accordion__content-right flex">
-                      <h3 class="accordion__content-title">Здесь пока пусто</h3>
+                      <h3 class="accordion__content-title title-reset">Здесь пока пусто</h3>
                       <p class="accordion__content-text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
                         интересное для себя</p>
-                      <a href="#" class="accordion__content-link">В галерею</a>
+                      <a href="#gallery" class="accordion__content-link">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -702,10 +700,10 @@
                       <img class="accordion__content-background" src="img/accordion-bck.jpg" alt="Серый прямоугольник">
                     </div>
                     <div class="accordion__content-right flex">
-                      <h3 class="accordion__content-title">Здесь пока пусто</h3>
+                      <h3 class="accordion__content-title title-reset">Здесь пока пусто</h3>
                       <p class="accordion__content-text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
                         интересное для себя</p>
-                      <a href="#" class="accordion__content-link">В галерею</a>
+                      <a href="#gallery" class="accordion__content-link">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -729,10 +727,10 @@
                       <img class="accordion__content-background" src="img/accordion-bck.jpg" alt="Серый прямоугольник">
                     </div>
                     <div class="accordion__content-right flex">
-                      <h3 class="accordion__content-title">Здесь пока пусто</h3>
+                      <h3 class="accordion__content-title title-reset">Здесь пока пусто</h3>
                       <p class="accordion__content-text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
                         интересное для себя</p>
-                      <a href="#" class="accordion__content-link">В галерею</a>
+                      <a href="#gallery" class="accordion__content-link">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -756,10 +754,10 @@
                       <img class="accordion__content-background" src="img/accordion-bck.jpg" alt="Серый прямоугольник">
                     </div>
                     <div class="accordion__content-right flex">
-                      <h3 class="accordion__content-title">Здесь пока пусто</h3>
+                      <h3 class="accordion__content-title title-reset">Здесь пока пусто</h3>
                       <p class="accordion__content-text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
                         интересное для себя</p>
-                      <a href="#" class="accordion__content-link">В галерею</a>
+                      <a href="#gallery" class="accordion__content-link">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -783,10 +781,10 @@
                       <img class="accordion__content-background" src="img/accordion-bck.jpg" alt="Серый прямоугольник">
                     </div>
                     <div class="accordion__content-right flex">
-                      <h3 class="accordion__content-title">Здесь пока пусто</h3>
+                      <h3 class="accordion__content-title title-reset">Здесь пока пусто</h3>
                       <p class="accordion__content-text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
                         интересное для себя</p>
-                      <a href="#" class="accordion__content-link">В галерею</a>
+                      <a href="#gallery" class="accordion__content-link">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -1035,8 +1033,8 @@
               <button class="contacts__btn-small  btn-reset">Заказать</button>
             </form>
             <div class="contacts__social">
-              <h3 class="contacts__title">Связаться в один клик</h3>
-              <ul class="contacts__list flex">
+              <h3 class="contacts__title title-reset">Связаться в один клик</h3>
+              <ul class="contacts__list flex list-reset">
                 <li class="contacts__item">
                   <a class="contacts__link" href="https://whatsapp.com" target="_blank" aria-label="Вотсап">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1082,7 +1080,7 @@
         <a class="footer__logo" href="#">
           <img src="img/header-logo.svg" alt="Логотип">
         </a>
-        <ul class="footer__list social flex">
+        <ul class="footer__list social flex list-reset">
           <li class="social__item">
             <a class="social__link" href="https://vk.com" target="_blank" aria-label="В Контакте">
               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1109,17 +1107,14 @@
     </footer>
   </div>
   <script src="libs/accordion.min.js"></script>
-  <!--Аккордеон-->
   <script src="libs/just-validate.min.js"></script>
-  <!--Валидация формы-->
   <script src="libs/inputmask.min.js"></script>
-  <!--Маска телефона-->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
   <script src="libs/swiper-bundle.min.js"></script>
   <script src="libs/choices.min.js"></script>
   <script src="libs/simplebar.min.js"></script>
   <script src="libs/graph-modal.min.js"></script>
-  <!--Модальное окно-->
+  <script src="libs/smooth-scroll.polyfills.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

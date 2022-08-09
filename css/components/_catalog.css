@@ -4,6 +4,7 @@
 }
 
 .catalog__descr {
+  margin: 0;
   margin-bottom: 40px;
   max-width: 1080px;
   font-size: 16px;
@@ -30,6 +31,7 @@
 }
 
 .tabs__title {
+  margin: 0;
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 24px;
@@ -39,17 +41,24 @@
 
 .tabs__date {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   font-size: 12px;
   line-height: 16px;
   color: var(--color-selectBorder);
 }
 
 .tabs__descr {
-  margin-bottom: 15px;
+  margin: 0;
   font-size: 16px;
   line-height: 32px;
   color: var(--color-text);
+}
+
+.tabs__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-btn);
 }
 
 .catalog__right {
@@ -205,7 +214,7 @@
   color: var(--color-active);
 }
 
-.link__text {
+.accordion__link-text {
   position: relative;
 }
 
@@ -285,6 +294,8 @@
 }
 
 .accordion__content-title {
+  margin: 0;
+  margin-bottom: 5px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -292,6 +303,8 @@
 }
 
 .accordion__content-text {
+  margin: 0;
+  margin-bottom: 5px;
   max-width: 275px;
   font-size: 16px;
   line-height: 22px;

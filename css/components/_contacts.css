@@ -10,6 +10,7 @@
 }
 
 .contacts__title {
+  margin: 0;
   margin-bottom: 1px;
   font-weight: 600;
   font-size: 24px;
