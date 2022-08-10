@@ -328,6 +328,9 @@
   .catalog__right {
     width: 50%;
   }
+  .accordion__content-wrap {
+    padding-bottom: 25px;
+  }
 
   /* EVENTS */
   .events {
@@ -599,6 +602,10 @@
 
   .events__descr {
     margin-bottom: 34px;
+  }
+
+  .accordion__content-wrap {
+    padding-bottom: 57px;
   }
 
   .accordion__content-wrapper {
