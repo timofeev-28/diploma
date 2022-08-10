@@ -25,17 +25,13 @@
 .events__content {
   flex-direction: column;
   justify-content: space-between;
-  align-items: left;
+  align-items: flex-start;
   box-sizing: border-box;
   padding: 14px 50px 47px;
   min-height: 400px;
   height: 100%;
   border: 1px solid var(--color-border);
   border-top: none;
-}
-
-.events__content-top {
-  margin-bottom: 5px;
 }
 
 .events__place,

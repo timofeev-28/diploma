@@ -28,6 +28,42 @@ btnOff.addEventListener('click', function () {
 })
 
 
+// STOP-SCROLL
+const btnDis = document.querySelector('.burger'),
+	btnOn = document.querySelector('.nav__btn-off'),
+  menuLink = menu.querySelectorAll('.nav__link'),
+	body = document.body;
+
+let disableScroll = function () {
+	let pagePosition = window.scrollY;
+	document.body.classList.add('disable-scroll');
+	document.body.dataset.position = pagePosition;
+	document.body.style.top = -pagePosition + 'px';
+}
+
+let enableScroll = function () {
+	let pagePosition = parseInt(document.body.dataset.position, 10);
+	document.body.style.top = 'auto';
+	document.body.classList.remove('disable-scroll');
+	window.scroll({ top: pagePosition, left: 0 });
+	document.body.removeAttribute('data-position');
+}
+
+btnDis.addEventListener('click', (e) => {
+	disableScroll();
+});
+
+btnOn.addEventListener('click', (e) => {
+	enableScroll();
+});
+
+menuLink.forEach(function (el) {
+  el.addEventListener('click', (e) => {
+    enableScroll();
+  })
+});
+
+
 // SEARCH
 let search = document.querySelector('.header-top__btn');
 let searchForm = document.querySelector('.form-search');

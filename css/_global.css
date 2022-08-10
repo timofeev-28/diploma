@@ -22,10 +22,4 @@ img {
   scroll-behavior: smooth;
 } */
 
-body {
-  margin: 0;
-  min-width: 320px;
-  font-family: "OpenSans", sans-serif;
-  font-weight: 400;
-}
 
