@@ -130,6 +130,7 @@
   .nav .nav__list {
     flex-direction: column;
     justify-content: initial;
+    margin-right: 0;
     margin-bottom: 179px;
     width: auto;
   }
@@ -278,7 +279,7 @@
 
   #choices--selectCustom-item-choice-2,
   #choices--selectCustom-item-choice-3 {
-    background-color: var(--color-text);
+    background-color: var(--color-black);
   }
 
   .gallery__checkbox {
@@ -413,7 +414,6 @@
 
   /* GALLERY */
   .gallery__left {
-    flex-direction: column;
     margin-right: 34px;
     width: 30%;
   }
@@ -746,11 +746,6 @@
   .gallery {
     padding-top: 50px;
     padding-bottom: 60px;
-    background-color: var(--color-text);
-    background-image: url("../img/gallery-bcg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .gallery__title {

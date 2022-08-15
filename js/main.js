@@ -7,28 +7,22 @@ let btnOff = document.querySelector('.nav__btn-off');
 burger.addEventListener('click', function () {
 
   menu.classList.toggle('nav--active');
-
-  document.body.classList.toggle('stop-scroll');
 })
 
 menuLinks.forEach(function (el) {
   el.addEventListener('click', function () {
 
     menu.classList.remove('nav--active');
-
-    document.body.classList.remove('stop-scroll');
   })
 })
 
 btnOff.addEventListener('click', function () {
 
   menu.classList.remove('nav--active');
-
-  document.body.classList.remove('stop-scroll');
 })
 
 
-// STOP-SCROLL
+// DISABLE-SCROLL
 const btnDis = document.querySelector('.burger'),
 	btnOn = document.querySelector('.nav__btn-off'),
   menuLink = menu.querySelectorAll('.nav__link'),
@@ -337,10 +331,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let eventsSlider = new Swiper(".projects__swiper", {
     slidesPerView: 1,
     slidesPerGroup: 1,
-    // grid: {
-    //   rows: 1,
-    //   fill: "row"
-    // },
     swipe: true,
     navigation: {
       nextEl: ".projects__next",

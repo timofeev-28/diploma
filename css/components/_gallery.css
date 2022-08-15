@@ -405,6 +405,7 @@
 }
 
 .graph-modal__content-title {
+  margin: 0;
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 24px;
@@ -412,6 +413,7 @@
 }
 
 .graph-modal__content-caption {
+  margin: 0;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -426,6 +428,7 @@
 }
 
 .graph-modal__content-text {
+  margin: 0;
   width: 401px;
   font-size: 16px;
   line-height: 22px;
